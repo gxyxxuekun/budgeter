@@ -2,7 +2,7 @@ import Button from '@mui/material/Button'
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Product } from '../../types'
-import ProductCard from '../../components/ProductCard'
+import ProductCard from '../../components/TransactionCard'
 import styled from 'styled-components'
 
 const ListComponent = styled('div')`
@@ -24,7 +24,7 @@ function Products() {
 
   return (
     <>
-      <h1>Products List Page!</h1>
+      <h1>Dashboard Page!</h1>
       <NavLink to="/new-product">
         <Button color="secondary" variant="outlined">
           Create a new product!
@@ -45,4 +45,3 @@ function Products() {
 }
 
 export default Products
-

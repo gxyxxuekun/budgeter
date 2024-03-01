@@ -13,3 +13,11 @@ export interface Seller {
     seller:string;
     _id:string;
   }
+
+  export interface Transaction {
+    date:Date,
+    merchants:string,
+    price:number,
+    _id:string
+
+  }

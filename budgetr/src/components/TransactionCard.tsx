@@ -10,9 +10,10 @@ const StyledCard = styled(Card)`
 `
 
 interface ProductCardProps {
-    productName: string;
-    description:string;
-    id: string;
+    date: string;
+    merchants:string;
+    price: number;
+    id:string
 }
 
 
@@ -22,19 +23,22 @@ function ProductCard(props: ProductCardProps) {
 
             <CardContent>
             <h3>
-                {props.productName}
+                {props.date}
             </h3>
             <p>
-                {props.description}
+                {props.merchants}
+            </p>
+            <p>
+                {props.date}
             </p>
             </CardContent>
         <CardActions>
-        <NavLink to={`/products/${props.id}`}>
+        <NavLink to={`/transactions/${props.id}`}>
         <Button variant="outlined">
           Visit Product Page
         </Button>
       </NavLink>
-      <NavLink to={`/products/${props.id}`}>
+      <NavLink to={`/transactions/${props.id}`}>
         <Button variant="outlined">
           Order
         </Button>
